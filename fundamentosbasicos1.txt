@@ -1,0 +1,172 @@
+1)
+function x(){
+	var y=[];
+	for(var i=1;i<256;i++){
+		y.push(i);
+		}
+	return y;
+}
+console.log(x());
+
+
+
+2)
+function x(){
+var y=0;
+for(var i =0; i<10001;i++){
+if(i%2==0){
+y=y+i;
+}
+}
+  return y;
+}
+console.log(x());
+
+
+3)
+function x(){
+var y=0;
+for(var i=1; i<5001; i+=2){
+y+=i;
+}
+return y;
+}
+console.log(x());
+
+4)
+function x(arr){
+var sum=0;
+var avr=0;
+for(var i=0; i<arr.length; i++){
+sum=sum+arr[i];
+}
+return sum;
+}
+console.log(x([1,2,3,4,5,6,7]));
+
+5)
+function x(arr){
+var max=0;
+for(var i=0; i<arr.length; i++){
+if(arr[i]>max){
+max=arr[i];
+}
+}
+return max;
+}
+console.log(x([1,2,3,4,5,6,23]));
+
+6)
+function x(arr){
+var y=0;
+var sum=0;
+for(var i=0; i<arr.length; i++){
+  y=arr[i];
+  sum=sum+y;
+}
+avr=sum/arr.length;
+return avr;
+}
+console.log(x([1,2,3,4,5,6,23]));
+
+7)
+function x(arr){
+	var arrnew=[]
+	for(var i=0; i<51; i++){
+		if(i%2==1){
+			arrnew.push(i);
+			}
+	}
+	return arrnew;
+}
+console.log(x());
+
+
+8)
+function x(arr,y){
+	for(var i=0; i<arr.length; i++){
+		if(arr[i]>y){
+		console.log(arr[i])
+		}
+      
+	}
+}
+x([1,3,5,7],3);
+
+9)
+function x(arr){
+	for(var i=0; i<arr.length;i++){
+		y=arr[i]*arr[i];
+		arr[i]=y;
+	}
+return arr;
+}
+console.log(x([1,5,10,-2]));
+
+10)
+function x(arr){
+	for(var i=0; i<arr.length; i++){
+		if(arr[i]<0){
+			arr[i]=0;
+		}
+	}
+return arr;
+}
+console.log(x([1,5,10,-2]));
+
+11)
+function x(arr){
+	max=0;
+	avr=0;
+	min=0;
+	sum=0;
+    arrnew=0;
+	for(var i=0;i<arr.length;i++){
+		if(arr[i]>max){
+			max=arr[i];
+		}
+		if(arr[i+1]>arr[i]){
+			min=arr[i];
+		}
+		sum=sum+arr[i];
+		avr=sum/arr.length;
+        arrnew=[max,min,avr];
+	}
+return arrnew;
+}
+console.log(x([1,5,10,-2]));
+
+
+12)
+function x(arr){
+	var arrnew=[];
+	for(var i=(arr.length-1); i>-1;i--){
+		console.log(arr[i]);
+          arrnew.push(arr[i]);
+		}
+return arrnew;
+}
+console.log(x([1,5,10,-2]));
+
+
+13)
+function x(arr){
+	for(var i=0; i<arr.length; i++){
+		if(arr[i]<0){
+		arr[i]='Dojo';
+		}
+	}
+return arr;
+}	
+console.log(x([-1,-3,2]));
+
+			
+
+
+
+
+
+
+
+
+
